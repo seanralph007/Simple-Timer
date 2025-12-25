@@ -19,7 +19,12 @@ export default function AddTimer() {
   return (
     <Form ref={form} onSave={handleSaveTimer} id="add-timer">
       <Input type="text" label="Timer Name" id="name" />
-      <Input type="number" label="Duration" id="duration" />
+      <Input
+        type="number"
+        label="Duration"
+        id="duration"
+        placeholder="Duration in Seconds"
+      />
       <p>
         <Button>Add Timer</Button>
       </p>
